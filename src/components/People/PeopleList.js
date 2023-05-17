@@ -34,9 +34,9 @@ const PeopleList = () => {
               </li>
             ))}
           </ul>
-          <Link to="/add-person">Add Person</Link>
         </>
       )}
+      <Link to="/add-person">Add Person</Link>
     </div>
   );
 };
