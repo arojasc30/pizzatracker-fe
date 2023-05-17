@@ -38,9 +38,9 @@ const PizzasList = () => {
               </li>
             ))}
           </ul>
-          <Link to={`/add-pizza/${personId}`}>Add Pizza</Link>
         </>
       )}
+      <Link to={`/add-pizza/${personId}`}>Add Pizza</Link>
     </div>
   );
 };
