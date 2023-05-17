@@ -15,11 +15,11 @@ const Header = () => {
     <div style={headerStyles}>
       <div style={{ fontSize: '24px', margin: '0' }}>Pizza Dashboard</div>
       <nav>
-        <Link to="/pizzas" style={linkStyles}>
-          Pizzas
-        </Link>
         <Link to="/people" style={linkStyles}>
           People
+        </Link>
+        <Link to="/reports" style={linkStyles}>
+          Reports
         </Link>
       </nav>
     </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import API from '../../services/api';
 
 const PeopleList = () => {
@@ -24,11 +25,17 @@ const PeopleList = () => {
       {people.length === 0 ? (
         <p>No people found.</p>
       ) : (
-        <ul>
-          {people.map((person) => (
-            <li key={person.id}>{person.name}</li>
-          ))}
-        </ul>
+        <>
+          <ul>
+            {people.map((person) => (
+              <li key={person.id}>
+                {person.name}
+                <Link to={`/pizzas-by-person/${person.id}`}> View pizzas</Link>
+              </li>
+            ))}
+          </ul>
+          <Link to="/add-person">Add Person</Link>
+        </>
       )}
     </div>
   );
